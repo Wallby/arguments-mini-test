@@ -117,6 +117,7 @@ int main(int unusedArgc, char** unusedArgv)
 	char* validArgv[] =
 		{
 			"", //< i.e. 1st parameter will be executable name..?
+			"apple",
 			"pear",
 			"-color=red",
 			"-tint=gray",
@@ -129,8 +130,7 @@ int main(int unusedArgc, char** unusedArgv)
 	char* invalidArgv[] =
 		{
 			"", //< i.e. 1st parameter will be executable name..?
-			"apple",
-			"pear" //< 2 arguments (not allowed)
+			"pear=" //< '=' in argument
 			//OR
 			//"-color" //< missing '=' character
 			//OR
