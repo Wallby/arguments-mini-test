@@ -1,4 +1,3 @@
-Debug/
-Release/
-# not sure what settings are stored in here (afaik this is not relevant atm)
-.settings/
+*.o
+*.exe
+arguments-mini-test
