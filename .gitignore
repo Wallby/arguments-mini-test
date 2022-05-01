@@ -1,4 +1,3 @@
-Makefile
 *.o
 *.exe
 arguments-mini-test
