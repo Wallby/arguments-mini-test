@@ -22,14 +22,14 @@ arguments-mini-test$(EXECUTABLE_EXTENSION): main.o $(LIBS)
 # always make..
 .PHONY: $(LIBS)
 $(LIBS):
-	make -C $(dir $@)
+	$(MAKE) -C $(dir $@)
 
 main.o: main.c
 	gcc -c main.c $(addprefix -I,$(DIR_PER_LIB))
 
 #******************************************************************************
 
-andrun: arguments-mini-test$(EXECEUTABLE_EXTENSION)
+andrun: arguments-mini-test$(EXECUTABLE_EXTENSION)
 	./arguments-mini-test$(EXECUTABLE_EXTENSION)
 
 clean:

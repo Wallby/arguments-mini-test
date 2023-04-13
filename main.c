@@ -254,8 +254,7 @@ int test_2_pearparameter_passed;
 int test_2_order_is_correct;
 int test_2_unintended_parameter;
 
-int test_2_on_parameterwithoutvalue_parsed(char*
- parametername)
+int test_2_on_parameterwithoutvalue_parsed(char* parametername)
 {
 	test_2_on_parameterwithoutvalue_parsed_called = 1;
 	if(strcmp(parametername, "banana") == 0)
